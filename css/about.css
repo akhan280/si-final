@@ -1,0 +1,180 @@
+.header-about {
+    font-family: "freight-big-pro", serif;
+    font-weight: 400;
+    padding: 25px;
+    font-style: normal;
+    }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    }
+    
+.header-about {
+    margin-bottom: 2rem;
+}
+
+.column img {
+    display: block;
+    margin: auto;
+  }
+  
+    
+  .container {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .column {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+  }
+
+  #grid {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+  
+  }
+
+
+  .images_grid {
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+/* Small screen / mobile */
+@media only screen and (max-width: 480px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+  
+    .column {
+      max-width: 100%;
+    }
+  
+    img {
+      border-radius: 20px;
+    }
+
+        
+  }
+  
+  /* Medium screen / tablet */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+
+    .images_grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .column {
+      max-width: 100%;
+    }
+  
+    img {
+      border-radius: 20px;
+    }
+  }
+  
+  /* Large screen / desktop */
+  @media only screen and (min-width: 769px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: auto;
+    }
+  
+    .column {
+      max-width: 50%;
+    }
+  
+    img {
+      border-radius: 20px;
+    }
+
+    .images_grid {
+      margin: 20px;
+      display: grid;
+      justify-self: center;
+      grid-template-columns: 2fr 2fr; 
+
+    }
+
+    #proj_header {
+      font-family: "freight-big-pro", serif;
+      font-weight: 400;
+      padding: 25px;
+      font-style: normal;
+      color: rgb(0, 0, 0);
+      padding-bottom: 2.2%;
+      margin: 40px;
+    }
+  
+  }
+  

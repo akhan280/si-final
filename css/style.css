@@ -1,0 +1,197 @@
+
+    
+@keyframes animateLogo {
+    from {width: 25px; opacity: 0;}
+    to {width: 475px; opacity: 1;}
+}
+
+#logo {
+animation: 5s;
+animation-iteration-count: 1;
+animation-name: animateLogo;
+}
+
+
+body {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;background-color: #ffffff;
+}
+
+header {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.nav_links {
+display: flex;
+flex-direction: column; /* confused what this does */
+}
+
+.nav_links li a:visited {
+color: blue;
+}
+
+.card > header {
+background: #288088;
+border: solid 2px #45ADAD;
+padding-top: 20px;
+padding-bottom: 20px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+
+.card {
+flex-basis: 450px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+
+.pricing {
+display: flex;
+justify-items: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.gallery img {
+border: solid 10px #50C7C7;
+margin: 10px;
+width: 300px;
+}
+
+.gallery {
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) {
+header, .nav_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing, .card {
+    flex-basis: 275px;
+}
+
+a + header {
+    top: 0px;
+    position: sticky;
+}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+#logo {
+    animation: slide none;
+}
+}
+
+@media print {
+body {
+    font-family: arial, helvetica;
+    background-image: none;
+}
+
+.nav_links {
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav {
+    width: 100%;
+}
+
+.pricing {
+    align-items: flex-end;
+    display: flex;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    flex-wrap: nowrap;
+}
+
+.cards {
+    border: solid 2px #45ADDD;
+    flex-basis: 325px;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+
+.gallery {
+    display: none;
+}
+
+#gallery {
+    display: none;
+}
+
+.card li:nth-child(2)::after {
+    content:"\1F44D";
+}
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    margin: 0;
+  }
+  
+  #footer {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #footer li {
+    margin-right: 20px;
+  }
+  
+  #footer li:last-child {
+    margin-right: 0;
+  }
+  
+  #footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-top: 20px;
+    }
+  
+    #footer li {
+      margin: 10px 0;
+    }
+  
+    #footer li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
