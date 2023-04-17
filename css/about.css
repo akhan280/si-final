@@ -90,6 +90,8 @@
     justify-items: center;
     flex-direction: column;
     align-items: center;
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px; 
   }
   
 
@@ -108,9 +110,7 @@
       max-width: 100%;
     }
   
-    img {
-      border-radius: 20px;
-    }
+
 
         
   }
@@ -134,9 +134,7 @@
       max-width: 100%;
     }
   
-    img {
-      border-radius: 20px;
-    }
+   
   }
   
   /* Large screen / desktop */
@@ -154,9 +152,6 @@
       max-width: 50%;
     }
   
-    img {
-      border-radius: 20px;
-    }
 
     .images_grid {
       margin: 20px;
