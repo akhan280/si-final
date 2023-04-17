@@ -38,9 +38,9 @@
     }
    
     .current-page {
-        color: #358BB9;
+        color: #484848;
         font-weight: bold;
-        border-bottom: 2px solid #358BB9;
+        border-bottom: 2px solid #3f4040;
     }
 
     #deskToggle a:hover {
